@@ -1,0 +1,274 @@
+
+%We are excited to announce the second annual Ronald Rapoport Summer Research Collaborative Program.Funded by agenerous gift fromthe Rapoport Family Foundation, this program aims to foster early-career graduate students’ research and publication by funding summer collaborations with faculty. The award provides graduate students with a $5000 summer scholarship to work on a collaborative project with faculty that is intended to result in a co-authored publication.PhD students who have not yet advanced to candidacy and faculty in Political Science are invited to submit joint proposals for summer research in the fields of American politics and policy or comparative political behavior. Preference will be given to 1) proposals in the field of political behavior; 2) collaborations involving first or second year students; 3) collaborations where faculty contribute 20 percent of the award amount.
+
+%To apply, interested graduate students should send a brief proposal (no more than 3 pages, including bibliography)that clearly states the research question, explains its scholarly relevance, and articulates the working hypotheses, research design, and proposed methods of analysis. Proposals should be accompanied by brief statement, no more than one page, from the faculty member describing the collaboration plan and, if applicable, his/her progress on previous summer collaborative awards. Proposals should be emailed as an attachment to:2022_Ra.7grrpvo7ro616h9d@u.box.com. Application deadline is May 13, 2021.Applications will be evaluated by a Committee formed by the Chair. Graduate student recipients will be required to submit a report to the Rapoport Family Foundation by December 15th, 2022, indicating the current status of the collaborative project. Working papers and publications resulting from the Summer Research Collaborative should acknowledge the financial support of the Rapoport Family Foundation.
+
+%Ronald Rapoport Summer Research Collaborative Program. This award provides graduate students with a $5000 summer scholarship to work on a collaborative project with faculty that is intended to result in a co-authored publication in the fields of American politics and policy or comparative political behavior. Preference will be given to 1) proposals in the field of political behavior; 2) collaborations involving first or second year students; 3) collaborations where faculty contribute 20 percent of the award amount. Application deadline is May 13. See here for details.
+
+\documentclass[12pt]{article}
+\usepackage{amsfonts, amsmath, amssymb, bm,mathtools,amsthm}
+\usepackage{dcolumn, multirow}
+\usepackage{graphicx,subfigure,subfig}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{indentfirst} 
+\usepackage{verbatim}
+\usepackage{rotating}
+\usepackage{footmisc}
+\usepackage{url}
+%\setlength{\footnotesep}{1.67\baselineskip} 
+\makeatother
+\newcommand\lipsum{}
+%\renewcommand{\footnotelayout}{\doublespacing}
+\usepackage[semicolon]{natbib}
+\usepackage{url}
+\usepackage{wrapfig}
+\usepackage{tikz,pgfplots}
+\pgfplotsset{compat=1.8}
+\usepgfplotslibrary{statistics}
+ \usepackage{epigraph}
+\usepackage{titlesec}
+\usepackage{sectsty}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{semtrans}
+\usepackage[capposition=top]{floatrow}
+\usepackage{wrapfig}
+\usepackage{times}
+%\usepackage{endfloat}
+
+\allsectionsfont{\large}
+\newcommand{\tab}{\hspace*{2em}}
+\bibpunct[, ]{(}{)}{,}{a}{}{,}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+\definecolor{harvardcrimson}{rgb}{0.79, 0.0, 0.09}
+\newcommand{\alerta}[1]{\textcolor{harvardcrimson}{#1}}
+
+\begin{document}
+
+\begin{center}
+\large{Chasing the Tribal Vote Survey Instrument (Draft)}\\ 
+
+\vspace{-.75em}
+\normalsize{
+%\today\\
+}
+\vspace{.75em}
+\end{center}
+%\begin{titlepage}
+  %\maketitle
+  %\thispagestyle{empty}
+\noindent
+\begin{small}
+\begin{minipage} [H] {0.49\textwidth}
+\singlespace
+\begin{center}
+Steven Brooke\\
+%\url{sbrooke@wisc.edu}\\
+Assistant Professor\\ %Department of Political Science\\The University of Wisconsin- Madison\\
+\end{center}
+\end{minipage}
+\hspace{\fill}
+\begin{minipage} [H] {0.49\textwidth}
+\singlespace
+\begin{center}
+Oliver Lang\\
+%\url{omlang@wisc.edu}\\
+Ph.D. Student\\ %Department of Political Science\\The University of Wisconsin- Madison\\
+\end{center}
+\end{minipage}
+\end{small}
+
+\normalsize
+%\vspace{-4em}
+%\begin{document}
+\bibliographystyle{apsr}
+%\maketitle
+
+\section*{Demographics}
+\begin{enumerate}
+
+\item \alerta{(Respondent Birthplace)} Please tell me where you were born 
+    \item[] \textit{Items: Drill down with list of Tunisian municipalities}
+    
+       \item \alerta{(Respondent place of residency)}  Please tell me where you are currently residing.
+    \item[] \textit{Items: Drill down with list of Tunisian municipalities}
+    
+    \item \alerta{(Parents' Birthplaces)}  Please tell me where your father was born. Please tell me where your mother was born.
+    \item[] \textit{Items: Two drill downs with lists of municipalities for father and mother.}
+    
+    \item \alerta{(Respondent Birth Month and Year)}  Please tell us your birth month and birth year
+    \item[] \textit{Items: list of months, and years}
+    
+     \item \alerta{(Respondent Gender)}  Please tell us your gender
+    \item[] \textit{Items: Male/Female/Other}
+    
+    
+     \item \alerta{(Respondent Education)} What is your most advanced secondary degree?
+    \item[] \textit{Items: Certificate of completion/baccalaureate/bachelors degree/masters}
+    
+     \item \alerta{(Parents' Birthplaces)}  Please tell me where your father was born. Please tell me where your mother was born.
+    \item[] \textit{Items: Two drill downs with lists of municipalities for father and mother.}
+    
+
+\end{enumerate}
+
+\section*{Tribal identity}
+
+\begin{enumerate}
+
+\item \alerta{Tribal ID any)} Here is a list of common tribal groups in your municipality. Please select any of the groups that you would consider yourself a member of
+
+    \item[] \textit{Items: local tribe 1/.../local tribe 10 /tribe not listed here/I don’t belong to a tribe}
+    
+       \item \alerta{(Tribal ID strongest)}[This and all following Qs in section only display if repsondents select 1 or more tribes from list in Q1]  You told us that you consider yourself to be a member of [first tribe listed in answer 1] and [second tribe listed in answer 1]. Which of these groups do you identify most strongly with?
+    \item[] \textit{Items: List of tribes respondent identifies with, piped in from Q1}
+    
+    \item \alerta{(Tribal ID vs other identities)}  We all have many identities.  It is normal for some of these identities to be more important to us than others when we think of ourselves. Now we will do a small exercise about how close you feel to different identities. Here are six different identities:
+    \begin{enumerate}
+        \item Muslim
+        \item Tunisian
+        \item Region (piped in from Respondent place of residency Q)
+        \item Tribe (piped in from Q2)
+        \item Amazigh
+        \item Arab
+    \end{enumerate}
+    You have ten “tokens”. Please divide the tokens between the six different identities, giving more tokens to the identities you feel closest to.
+
+
+    \item[] \textit{Items: Respondents will be able to enter in the amount of tokens they want to allocate for each identity.}
+    
+    \item \alerta{(Tribal competition)}  Here is a list of tribes others in your municipality say they belong to. For each tribe in the list, can you tell us about the relationship between the listed tribe and the tribe you feel closest to?
+
+    \item[] \textit{Items:  List of local tribes (minus the tribe respondent considers themselves closest to). For each tribe, a slider that varies from “This tribe is an ally to my tribe” to “This tribe is neither an ally nor a rival to my tribe” to ``This tribe is a rival to my tribe''
+}
+    
+     \item \alerta{(Tribal identity content)}  In a few words, please tell us what you think makes members of [piped-in respondent tribal group] different from other people.
+    \item[] \textit{Items: Open-ended response}
+    
+     \item \alerta{(Tribal leaders exist)} When someone in your tribe has a problem or there is a dispute, is there a local leader, or group of leaders, that that people in your tribe will go to for help?
+    \item[] \textit{Items: Yes/no/not sure}
+    
+     \item \alerta{(Tribal leaders in politics)} [Only displayed if respondents answer ``yes'' to previous Q]  Think about the leader(s) from the previous question. Please tell us whether it is common for such leaders from your tribe to:
+     \begin{enumerate}
+         \item Work with politicians to help members of your tribe get jobs 
+         \item Tell members of your tribe how they should vote
+         \item Make sure politicians understand what members of your tribe need
+         \item Run for political office in local elections
+         \item Join a political party
+         \item Intermediate when there is a dispute between members of your tribe and the government 
+         \item Help members of the tribe access a government service
+     \end{enumerate}
+    \item[] \textit{Items: 5-point Likert scale from ``very common'' to ``very rare''}
+    
+     \item \alerta{(Tribal leaders in politics appropriate)} [Only displayed if respondents answer ``yes'' to tribal leaders exist Q]  Now please tell us whether it is \textbf{appropriate} for such leaders from your tribe to:
+     \begin{enumerate}
+         \item Work with politicians to help members of your tribe get jobs 
+         \item Tell members of your tribe how they should vote
+         \item Make sure politicians understand what members of your tribe need
+         \item Run for political office in local elections
+         \item Join a political party
+         \item Intermediate when there is a dispute between members of your tribe and the government 
+         \item Help members of the tribe access a government service
+     \end{enumerate}
+    \item[] \textit{Items: 5-point Likert scale from ``very appropriate'' to ``very innapropriate''}
+\end{enumerate}
+\section*{Political preferences}
+\begin{enumerate}
+   \item \alerta{(Policy preferences)}  Please order the below topics from most to least important for your local government to focus on in the immediate future:
+    \item[] \textit{Items: List of valued policies and development outcomes that we will elicit from respondents in a pilot. Can be ordered by respondents via ``drag and drop''}
+    
+    \item \alerta{(Vote choice)}  What party did you vote for in the last parliamentary elections?
+    \item[] \textit{Items: List of parties, did not vote option}
+    
+    \item \alerta{(Political participation)}  Please tell us if you have participated in any of the following activities in the last two years:
+    \begin{enumerate}
+        \item Contacted a politician
+        \item Gone to a campaign rally or political event
+        \item Volunteered for a political campaign
+        \item Other participation item
+    \end{enumerate}
+    
+    \item[] \textit{Items: Yes/no}
+
+\end{enumerate}
+
+
+\section*{Descriptive Qs for mechanism}
+\begin{enumerate}
+
+
+\item \alerta{(Tribal favoritism)}  Please tell us whether you agree or disagree with the following statements:
+    \begin{enumerate}
+        \item If a member of your tribe was hiring a new employee, they should try to hire someone from your tribe before looking at other candidates
+
+        \item It is important that other members of my tribe will do well
+
+        \item People from our community should only share resources and power with other members of the tribe.
+        
+        \item Members of our tribe have to look out for each other because no one else will
+
+        \item We should just focus on our own tribe and not worry about others in Tunisia.
+    \end{enumerate}
+    
+    \item[] \textit{Items: Likert scale from ``strongly agree'' to ``strongly disagree''}
+    
+       \item \alerta{(Social distance rival tribe)}  What is the closest relationship you would find acceptable with a member of [insert rival tribe from ``tribal competition'' Q]? For example, if you would accept a member of [insert rival tribe] living on your street, but not as a close friend, then you would choose neighbors.
+
+    \item[] \textit{Items: Relative / Friend / Neighbor / Co-worker / Visitor / None}
+    
+    
+\end{enumerate}
+
+\section*{Candidate Choice Experiment}
+
+We are going to describe several hypothetical candidates for local council elections to you. After reading the information about each candidate, please take a moment to carefully consider your answers to the questions that follow.
+
+
+\newpage
+
+
+
+
+\begin{landscape}
+\begin{table}[]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}ll@{}}
+\toprule
+Attribute                & Levels                                                                                                         \\ \midrule
+Gender                   & \begin{tabular}[c]{@{}l@{}}Male\\ Female\end{tabular}                                                          \\
+Age                      & 25-75                                                                                                          \\
+Tribal identity: & \begin{tabular}[c]{@{}l@{}}Co-tribal\\ Cross-tribal (from rival tribe)\\ Non-tribal\\ No information about candidate's tribal affiliation\end{tabular} \\
+Tribal leader:           & \begin{tabular}[c]{@{}l@{}}Was tribal leader before running for office\\ No mention of leadership\end{tabular} \\
+Neighborhood connection: & \begin{tabular}[c]{@{}l@{}}From your neighborhood\\ No mention of candidate residency / origin\end{tabular}    \\
+Party                    & \begin{tabular}[c]{@{}l@{}}Qālb Tunis\\ Other top 10 parties\end{tabular}                                      \\ \bottomrule
+\end{tabular}%
+}
+\caption{}
+\label{tab:my-table}
+\end{table}
+\end{landscape}
+
+\begin{enumerate}
+   \item \alerta{(Vote choice)}  How likely would you be to support this candidate?
+    \item[] \textit{Items: Slider: ``very likely'' - ``very unlikely''}
+    
+    \item \alerta{(Vote choice)}  What party did you vote for in the last parliamentary elections?
+    \item[] \textit{Items: List of parties, did not vote option}
+    
+    \item \alerta{(Mechanism Questions
+)} For each of the following statements, please tell us how likely you think the statement will be true.
+    \begin{enumerate}
+        \item This candidate has political preferences similar to my own.
+        \item This candidate would do a good job making sure the government takes care of people like me.
+        \item I would trust this candidate to do what's right
+        \item This candidate would know what is going on in my neighborhood
+        \item I would be able to reach this person if I needed to communicate with someone on the local council
+    \end{enumerate}
+    
+    \item[] \textit{Items: Slider from "very likely true" - "unlikely to be true"}
+
+\end{enumerate}
+
+\end{document}
